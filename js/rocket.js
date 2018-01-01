@@ -13,6 +13,21 @@ var changeState = function (state) {
  		timer = setInterval(function () {
 			countDownNumber--;
 			document.getElementById('countdown').innerHTML = countDownNumber;
+
+			if (countDownNumber >= 4 && countDownNumber <= 6) {
+				//nervous
+				document.getElementById('nervous').className = 'nervous show';
+			} else {
+				document.getElementById('nervous').className = 'nervous';
+			}
+
+			if (countDownNumber >= 1 && countDownNumber <= 3) {
+				//can't wait
+				document.getElementById('cant-wait').className = 'cant-wait show';
+			} else {
+				document.getElementById('cant-wait').className = 'cant-wait';
+			}
+
 		if (countDownNumber <= 0) {
 			changeState(3);
 		};
