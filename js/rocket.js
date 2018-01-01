@@ -10,13 +10,13 @@ var changeState = function (state) {
 
 
 	if (state == 2) {
-		timer = setInterval(function () {
+ 		timer = setInterval(function () {
 			countDownNumber--;
 			document.getElementById('countdown').innerHTML = countDownNumber;
 		if (countDownNumber <= 0) {
 			changeState(3);
 		};
-		}, 100);
+		}, 1000);
 	}
 		else if (state == 3) {
 			var success = setTimeout( function () {
