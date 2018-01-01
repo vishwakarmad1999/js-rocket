@@ -1,10 +1,12 @@
 .cool {
 	width : 100px;
-	height: 100px;
-	background-color: cadetblue;
-	transition : background-color 1.5s;
+	height : 50px;
+	background-color : cadetblue;
+	transition : background-color .6s;
+	font-family: monospace;
 }
 
 .pink {
 	background-color: tomato;
+	font-family:  cursive;
 }

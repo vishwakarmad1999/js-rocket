@@ -14,8 +14,9 @@ var doCoolStuff = function () {
 			incrementX();
 		}
 }
-
-
+var whatIsMyName = function () {
+	console.log("Your name is Divya Vishwakarma");
+};
 var checkSwitch = function () {
 	if (x % 2 == 0) {
 		car.switchCar(true);
