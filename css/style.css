@@ -1,3 +1,10 @@
-body {
+.cool {
+	width : 100px;
+	height: 100px;
+	background-color: cadetblue;
+	transition : background-color 1.5s;
+}
+
+.pink {
 	background-color: tomato;
 }

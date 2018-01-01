@@ -1,8 +1,21 @@
 console.log("Hello there friends");
+
 var x = 1;
 var incrementX = function () {
 	x++;
 }
+var doCoolStuff = function () {
+		if (x % 2 == 1) {
+			document.getElementById('cool').className = 'cool pink';
+			incrementX();
+		}
+		else {
+			document.getElementById('cool').className = 'cool';
+			incrementX();
+		}
+}
+
+
 var checkSwitch = function () {
 	if (x % 2 == 0) {
 		car.switchCar(true);
